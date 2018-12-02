@@ -1,58 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+	<meta name="Author" content="Ling Ma">
+	<meta name="Description" content="Ling Ma's personal website.">
 	<meta charset="utf-8">
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-	<title>My test Page</title>
+	<title>Ling Ma - Personal Website</title>
 </head>
+
 <body>
 	<!--Home-->
-	<div>
-		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Experience</li>
-			<li>Project</li>
-			<li>Portfolio</li>
-			<li>Contact</li>
-		</ul>
+	<article id="Home">
+		<header><h1>Hello.<br>This is Ling Ma.</h1></header>
 
-		<h1>Hello.<br>This is Ling Ma.</h1>
-		<div>
-			Student in Macalester College | Software Developer| Philosopher | Painter</li>
-		</div>
-		<img src="images/mainBG.jpg" alt="subset main picture">
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li> <a href="#About">About</a></li>
+				<li>Experience</li>
+				<li><a href="#Project">Project</a></li>
+				<li><a href="#Portfolio">Portfolio</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+		</nav>
+		<p>
+			Student in Macalester College
+		<p>
 		<hr>
-	</div>
+	</article>
 	<!--Home End-->
 
 	<!--About-->
-	<div>
+	<article id="About">
+		<h3>About</h3>
 		<p>I was born and raised in Beijing. Currently, I am Sophomore majoring in Computer Science at Macalester College in Saint Paul, MN.</p>
 		<p>At this point, I am still exploring the interdisciplines of science, technology, arts and philosophy. My adventure has just started.</p>
 		<p>In free time, I enjoy movies. My favorite genre are Cartoon and fantacy, represents by Tom Burton. Besides that, I love sports. I had been a student athlete for eight years, and I keep the habit of doing sports until today.</p>
+		<br>
+		<a href="pdfs/resume.pdf" title="Ling Ma resume" target="_blank">Resume</a>
+		<br>
+
+		<a href="#Home"><img src="images/up-chevron.png"></a>
 		<hr>
-	</div>
+	</article>
 	<!--About End-->
 
 	<!--Experience-->
-	<div>
-		
-	</div>
+	<article id="Experience">
+		<header><h3>Experience</h3></header>
+		<section>
+			<h4>Mock Trial</h4>
+			<time datetime="sep 2017">Sep 2017</time>
+			<p>Joined Macalester Mock Trial team. Played as both an attorney and witness.</p>
+		</section>
+
+		<a href="#Home"><img src="images/up-chevron.png"></a>
+	</article>
 	<!--Experience End-->
 
 	<!--Project-->
-	<div>
-		<div>
-			<img src="images/breakout.png">
+	<article id="Project">
+		<head><h3>Project</h3></head>
+		<section>
+			<img src="images/breakout.png" alt="a screenshot of BreakOut-Game" title="a screenshot of BreakOut-Game">
 			<h4>Breakout Game</h4>
 			<p>I worked on this project during CS 124 to practice object-oriented design in Java. The game is implemented with ball class, paddle class, brick wall class, and game program class. All objects are initialized and their collisions are checked in the game program class.</p>
 			"Github:"
-			<a href="https://github.com/LINGAP/BreakOut-Game" title="BreakOut-Game" target="_blank">Take a look</a>
-		</div>
-	</div>
+			<a href="https://github.com/LINGAP/BreakOut-Game" title="BreakOut-Game" target="_blank">Look at breakout</a>
+		</section>
+		<br>
+
+		<a href="#Home"><img src="images/up-chevron.png"></a>
+	</article>
 	<!--Project End-->
+
+	<!--Portfolio-->
+	<article id="Portfolio">
+		<div class="Portfolio">
+			<a href="sites/portfolio.html">Portfolio</a>
+		</div>
+
+		<div class="Personal">
+			<a href="sites/personal.html">Personal Collection</a>
+		</div>
+	</article>
+	<!--Portfolio End-->
+
+	<!--Contact-->
+	<article>
+		
+	</article id="Contact">
+	<!--Contact End-->
+
+	<footer>
+		<hr>
+		<p>©Copyright Ling Ma 2018 </p>
+		<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	</footer>
 
 <script type="text/javascript" src="scripts/main.js"></script>
 </body>

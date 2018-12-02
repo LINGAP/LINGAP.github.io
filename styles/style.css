@@ -1,16 +1,24 @@
 html{
 	font-size: 14px;
 	font-family: 'Roboto Mono', monospace;
+	margin: 0;
 }
 body{
 	background-color:#EBE4E4; 
-	padding: 0 20px 20px 20px;/*clockwise*/
+	/*padding: 0 20px 20px 20px;/*clockwise*/
+}
+#Home{
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/mainBG.jpg);
 }
 h1{
+	color: #ffffff;
 	font-size: 50px;
 	text-align: center;
 	border: 5px solid black;
-	margin: 200px 100px 0 100px;
+	margin: 0;
 	/*text-shadow: 3px 3px 5px black; horiPos, vertiPos, Blur, Color*/
 }
 img{
