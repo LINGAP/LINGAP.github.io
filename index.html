@@ -6,42 +6,37 @@
 	<meta charset="utf-8">
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image icon">
 	<title>Ling Ma - Personal Website</title>
 </head>
 
 <body>
 	<!--Home-->
 	<article id="Home">
-		<header><h1>Hello.<br>This is Ling Ma.</h1></header>
-
-		<nav>
-			<ul>
-				<li>Home</li>
-				<li> <a href="#About">About</a></li>
-				<li>Experience</li>
-				<li><a href="#Project">Project</a></li>
-				<li><a href="#Portfolio">Portfolio</a></li>
-				<li><a href="#Contact">Contact</a></li>
-			</ul>
-		</nav>
-		<p>
-			Student in Macalester College
-		<p>
-		<hr>
+			<header><h1>Hello. I'm Ling Ma.</h1></header>
+			<nav>
+				<ul>
+					<li><a href="#Home"><span>Home</span></a></li>
+					<li><a href="#About"><span>About</span></a></li>
+					<li><a href="#Experience"><span>Experience</span></a></li>
+					<li><a href="#Project"><span>Project</span></a></li>
+					<li><a href="#soft"><span>Portfolio</span></a></li>
+					<li><a href="#Contact"><span>Contact</span></a></li>
+				</ul>
+			</nav>
+			<div id="resume"><a href="pdfs/resume.pdf" title="Ling Ma resume" target="_blank">Resume</a></div>
 	</article>
 	<!--Home End-->
 
 	<!--About-->
 	<article id="About">
 		<h3>About</h3>
-		<p>I was born and raised in Beijing. Currently, I am Sophomore majoring in Computer Science at Macalester College in Saint Paul, MN.</p>
-		<p>At this point, I am still exploring the interdisciplines of science, technology, arts and philosophy. My adventure has just started.</p>
-		<p>In free time, I enjoy movies. My favorite genre are Cartoon and fantacy, represents by Tom Burton. Besides that, I love sports. I had been a student athlete for eight years, and I keep the habit of doing sports until today.</p>
-		<br>
-		<a href="pdfs/resume.pdf" title="Ling Ma resume" target="_blank">Resume</a>
-		<br>
-
-		<a href="#Home"><img src="images/up-chevron.png"></a>
+		<section>
+			<p>I was born and raised in Beijing. Currently, I am Sophomore majoring in Computer Science at Macalester College in Saint Paul, MN.</p>
+			<p>At this point, I am still exploring the interdisciplines of science, technology, arts and philosophy. My adventure has just started.</p>
+			<p>In free time, I enjoy movies. My favorite genres are Cartoon and fantacy, represents by Tom Burton.</p>
+			<br>
+		</section>
 		<hr>
 	</article>
 	<!--About End-->
@@ -52,51 +47,93 @@
 		<section>
 			<h4>Mock Trial</h4>
 			<time datetime="sep 2017">Sep 2017</time>
-			<p>Joined Macalester Mock Trial team. Played as both an attorney and witness.</p>
+			<p>Joined Macalester Mock Trial team for two years. Played both as an attorney and witness. Attended multiple invitational competitions in MN. The activity provides me an amazing opportunity to practice team cooperation and public speaking.</p>
+		</section>
+		<section>
+			<h4>Python Teaching Assistant</h4>
+			<time datetime="jun 2018">Jun 2018</time>
+			<p>Was a pre-course Python TA for a summer machine learning course. While being the TA, I audited the course and learned about the process of data cleaning, feature engineering, model optimization, and model stacking. We did a throughout analysis on a dataset provided by Santander Value Prediction Challenge on Kaggle. I also practiced with the classic Titonic dataset.  </p>
 		</section>
 
-		<a href="#Home"><img src="images/up-chevron.png"></a>
+		<br>
+		<hr>
 	</article>
 	<!--Experience End-->
 
 	<!--Project-->
 	<article id="Project">
 		<head><h3>Project</h3></head>
-		<section>
+		<section id="breakout">
 			<img src="images/breakout.png" alt="a screenshot of BreakOut-Game" title="a screenshot of BreakOut-Game">
 			<h4>Breakout Game</h4>
-			<p>I worked on this project during CS 124 to practice object-oriented design in Java. The game is implemented with ball class, paddle class, brick wall class, and game program class. All objects are initialized and their collisions are checked in the game program class.</p>
-			"Github:"
+			<p>I worked on this project during CS 124 to practice object-oriented design in Java. The game is implemented with ball class, paddle class, brick wall class, and game program class. All objects are initialized and their collisions are checked in the game program class. The ball could change direction and occasionally speed according to the movement of the paddle. </p>
+			<span>Github:</span> 
 			<a href="https://github.com/LINGAP/BreakOut-Game" title="BreakOut-Game" target="_blank">Look at breakout</a>
 		</section>
-		<br>
 
-		<a href="#Home"><img src="images/up-chevron.png"></a>
+		<section id="delaunay">
+			<img src="images/delaunay.png" alt="a screenshot of using delaunay triangulation to process image(before)" title="delaunay triangulation(before)">
+			<img src="images/delaunay2.png" alt="a screenshot of using delaunay triangulation to process image(after)" title="delaunay triangulation(after)">
+			<h4>Delaunay Triangulation Image Processor</h4>
+			<p>The project is written in Python. It's implemented with a main app board(as shown in pic), a helper board which links dots for debugging, and a delaunay class to implement the algorithm. Cv2 was used to detect edges and fill colors.</p>
+			<span>Github:</span> 
+			<a href="https://github.com/LINGAP/Delaunay-Triangulation" title="Delaunay Triangulation" target="_blank">Look at Delaunay</a>
+		</section>
+		<br>
+		<hr>
 	</article>
 	<!--Project End-->
 
 	<!--Portfolio-->
-	<article id="Portfolio">
+	<article id="soft">
 		<div class="Portfolio">
-			<a href="sites/portfolio.html">Portfolio</a>
+			<a href="sites/portfolio.html"><h4 class="text-clip">Portfolio</h4></a>
 		</div>
 
 		<div class="Personal">
 			<a href="sites/personal.html">Personal Collection</a>
+			<strong>Password Required.</strong>
 		</div>
+		<br>
+		<hr>
 	</article>
 	<!--Portfolio End-->
 
 	<!--Contact-->
-	<article>
-		
-	</article id="Contact">
+	<article id="Contact">
+		<section> 
+			<form action="/my-handling-form-page" method="post">
+				<h2>CONTACT</h5>
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="visitor_name"> <!--Note: for == id-->
+				</div>
+				<div>
+					<label for="mail">E-mail:<strong><abbr title="required">*</abbr></strong></label>
+					<input type="email" id=mail name="visitor_mail">
+				</div>
+ 
+				<div>
+					<label for="subject">Subject:</label>
+					<input type="text" id="subject" name="visitor_sub" value="About Ling's website">
+				</div>
+
+				<div>
+					<label for="msg">Message:<strong><abbr title="required">*</abbr></strong></label>
+					<textarea id="msg" name="visitor_msg">Hi,</textarea>
+				</div>
+
+				<div class="button">
+					<button type="submit">Send</button>
+				</div>
+			</form>
+		</section>
+	</article>
 	<!--Contact End-->
 
 	<footer>
 		<hr>
 		<p>©Copyright Ling Ma 2018 </p>
-		<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 	</footer>
 
 <script type="text/javascript" src="scripts/main.js"></script>
