@@ -4,65 +4,90 @@
 	<meta name="Author" content="Ling Ma">
 	<meta name="Description" content="Ling Ma's personal website.">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amaranth:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image icon">
 	<title>Ling Ma - Personal Website</title>
 </head>
 
 <body>
 	<!--Home-->
+
 	<article id="Home">
-			<header><h1>Hello. I'm Ling Ma.</h1></header>
-			<nav>
-				<ul>
-					<li><a href="#Home"><span>Home</span></a></li>
-					<li><a href="#About"><span>About</span></a></li>
+			<nav class="navbar navbar-default">
+				<div class="container">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+				<div class="navbar-header"><div><h3>Ling Ma</h3><span>Personal Web</span></div></div>
+				<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="bs-nav">
+					<li><a href="#Home"><span>&nbsp;Home&nbsp;</span></a></li>
+					<li><a href="#About"><span>&nbsp;About&nbsp;</span></a></li>
 					<li><a href="#Experience"><span>Experience</span></a></li>
 					<li><a href="#Project"><span>Project</span></a></li>
 					<li><a href="#soft"><span>Portfolio</span></a></li>
 					<li><a href="#Contact"><span>Contact</span></a></li>
 				</ul>
+				</div>
 			</nav>
+			<header>Hello. Welcome.</header>
 			<div id="resume"><a href="pdfs/resume.pdf" title="Ling Ma resume" target="_blank">Resume</a></div>
 	</article>
 	<!--Home End-->
 
+	
 	<!--About-->
-	<article id="About">
-		<h3>About</h3>
-		<section>
-			<p>I was born and raised in Beijing. Currently, I am Sophomore majoring in Computer Science at Macalester College in Saint Paul, MN.</p>
-			<p>At this point, I am still exploring the interdisciplines of science, technology, arts and philosophy. My adventure has just started.</p>
-			<p>In free time, I enjoy movies. My favorite genres are Cartoon and fantacy, represents by Tom Burton.</p>
-			<br>
-		</section>
-		<hr>
+	<article id="About" class="container">
+			
+			<header><h3>About</h3></header>
+				<div class="col-lg-2 col-md-2">
+				<img src="images/me.jpg" alt="profile photo" title="my profile photo">
+				</div>
+				<div id="intro" class="col-lg-6 col-md-6 col-sm-8">
+					<p>I was born and raised in Beijing. Currently, I am Sophomore majoring in Computer Science at Macalester College in Saint Paul, MN.</p>
+					<p>At this point, I am still exploring the interdisciplines of science, technology, arts and philosophy. My adventure has just started.</p>
+					<p>In free time, I enjoy movies. My favorite genres are Cartoon and fantacy, represents by Tom Burton.</p>
+				</div>
+				<ul class="col-lg-4 col-md-4 col-sm-4">
+					<li>St.Paul, MN</li>
+					<li>lma@macalester.edu</li>
+				</ul>
+			
 	</article>
+
 	<!--About End-->
 
+	<hr>
 	<!--Experience-->
 	<article id="Experience">
 		<header><h3>Experience</h3></header>
 		<section>
-			<h4>Mock Trial</h4>
+			<h4>Mock Trial<img class="logo" src="images/MTlogo.jpg"></h4>
 			<time datetime="sep 2017">Sep 2017</time>
+			<span>Macalester College, St.Paul, MN</span>
 			<p>Joined Macalester Mock Trial team for two years. Played both as an attorney and witness. Attended multiple invitational competitions in MN. The activity provides me an amazing opportunity to practice team cooperation and public speaking.</p>
 		</section>
 		<section>
-			<h4>Python Teaching Assistant</h4>
+			<h4>Python Teaching Assistant<img class="logo" src="images/tailorEdu.jpg"></h4>
 			<time datetime="jun 2018">Jun 2018</time>
-			<p>Was a pre-course Python TA for a summer machine learning course. While being the TA, I audited the course and learned about the process of data cleaning, feature engineering, model optimization, and model stacking. We did a throughout analysis on a dataset provided by Santander Value Prediction Challenge on Kaggle. I also practiced with the classic Titonic dataset.  </p>
+			<span>TailorEdu, Beijing, China</span>
+			<p>Was a pre-course Python TA for a summer machine learning course. While being the TA, I audited the course and learned about the process of data cleaning, feature engineering, model optimization, and model stacking. We did a throughout analysis on a dataset provided by Santander Value Prediction Challenge on Kaggle, and practiced with the classic Titonic dataset.  </p>
 		</section>
-
 		<br>
-		<hr>
 	</article>
 	<!--Experience End-->
 
+	<hr>
 	<!--Project-->
 	<article id="Project">
-		<head><h3>Project</h3></head>
+		<header><h3>Project</h3></header>
 		<section id="breakout">
 			<img src="images/breakout.png" alt="a screenshot of BreakOut-Game" title="a screenshot of BreakOut-Game">
 			<h4>Breakout Game</h4>
@@ -80,62 +105,61 @@
 			<a href="https://github.com/LINGAP/Delaunay-Triangulation" title="Delaunay Triangulation" target="_blank">Look at Delaunay</a>
 		</section>
 		<br>
-		<hr>
 	</article>
 	<!--Project End-->
 
+	<hr>
 	<!--Portfolio-->
 	<article id="soft">
 		<div class="Portfolio">
-			<a href="sites/portfolio.html"><h4 class="text-clip">Portfolio</h4></a>
-		</div>
-
+				<a href="sites/portfolio.html"><h4 class="text-clip">Portfolio</h4></a>
+			</div>
 		<div class="Personal">
-			<a href="sites/personal.html">Personal Collection</a>
-			<strong>Password Required.</strong>
+				<a href="sites/personal.html">Personal Collection</a>			
 		</div>
 		<br>
-		<hr>
 	</article>
 	<!--Portfolio End-->
 
+	<hr>
 	<!--Contact-->
 	<article id="Contact">
 		<section> 
 			<form action="/my-handling-form-page" method="post">
-				<h2>CONTACT</h5>
+				<h3>CONTACT</h3>
 				<div>
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="visitor_name"> <!--Note: for == id-->
+					<label for="name">Name<strong><abbr title="required">*</abbr></strong></label>
+					<input type="text" id="name" placeholder="Your Name" name="visitor_name" required> <!--Note: for == id-->
 				</div>
 				<div>
-					<label for="mail">E-mail:<strong><abbr title="required">*</abbr></strong></label>
-					<input type="email" id=mail name="visitor_mail">
+					<label for="mail">E-mail<strong><abbr title="required">*</abbr></strong></label>
+					<input type="email" id=mail name="visitor_mail" placeholder="Your email" required>
 				</div>
  
 				<div>
-					<label for="subject">Subject:</label>
-					<input type="text" id="subject" name="visitor_sub" value="About Ling's website">
+					<label for="subject">Subject</label>
+					<input type="text" id="subject" name="visitor_sub" placeholder="Subject">
 				</div>
 
 				<div>
-					<label for="msg">Message:<strong><abbr title="required">*</abbr></strong></label>
-					<textarea id="msg" name="visitor_msg">Hi,</textarea>
+					<label for="msg">Message<strong><abbr title="required">*</abbr></strong></label>
+					<textarea id="msg" name="visitor_msg" placeholder="Type message here.." required></textarea>
 				</div>
 
 				<div class="button">
-					<button type="submit">Send</button>
+					<button type="submit" >Send</button>
 				</div>
 			</form>
 		</section>
 	</article>
 	<!--Contact End-->
 
+	<hr>
 	<footer>
-		<hr>
 		<p>©Copyright Ling Ma 2018 </p>
 	</footer>
-
-<script type="text/javascript" src="scripts/main.js"></script>
 </body>
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
 </html>
