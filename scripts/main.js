@@ -1,5 +1,4 @@
 var contactForm=document.querySelector("form");
-
 var mail = document.getElementById('mail');
 var msg = document.getElementById('msg');
 // var submit = document.getElementById('submit');
