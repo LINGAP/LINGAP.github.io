@@ -4,7 +4,12 @@
          url('../fonts/abrilfatface-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+:root{
+  --navi-bar-color:rgba(0, 26, 51,0.8);
+  --navi-rosy-color:rgba(245, 216, 214,0.5);
+  --font-dark-green-color:rgb(34, 62, 74);
 }
 
 html,body{
@@ -14,7 +19,6 @@ html,body{
 	padding: 0;
 	background-color:#e2e4e9;
 	height: 100%;
-	/*overflow-x: hidden;*/
 }
 article:nth-of-type(odd){
 	background-color: #f0f2f4;
@@ -39,20 +43,20 @@ body section{
 }
 a,a:visited{
 	text-decoration: none;
-	color: rgb(105, 73, 79);
+}
+ul{
+  list-style-type: none;
 }
 
 /*Font*/
 body{
-	color: #223E4A;
+	color: var(--font-dark-green-color);
 	text-indent: 2rem;
-	line-height: 2;
+	line-height: 1.2;
 }
 header{
 	font-family: 'abril_fatfaceregular',monospace;
 	text-align: center;
-	margin: 0;
-	padding: 1rem;
 }
 
 input,textarea{
@@ -64,8 +68,6 @@ input,textarea{
 /*Home*/
 #Home{
 	color: #ffffff;
-	margin: 0;
-	padding: 0;
 	background-image: url(../images/homeBG.jpg);
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -80,27 +82,25 @@ input,textarea{
 	top: 30%;
 	transform: translate(0,-50%);
 	width: 100%;
+  font-size: 3rem;
+  font-weight:100;
+  letter-spacing: .6rem;
 }
-#Home header, h3{
+.navbar-header h4{
 	font-family: 'abril_fatfaceregular',monospace;
 	letter-spacing: .3rem;
 }
-#Home header{
-	font-size: 3rem;
-	letter-spacing: 1.1rem;
-}
 #Home nav{
-	outline: 3px solid red;
 	position: fixed;
-	top: 0;
-	z-index: 1;
-	padding:0;
-	background-color: black;
-	width: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--navi-bar-color);
+  border-color:var(--navi-bar-color);
 }
 
 #Home .navbar-header span{
-	margin: 0 1.5rem;}
+	margin: 0 1rem;
+}
 #bs-nav{
 	margin: 1rem 0;
 	padding: 0;
@@ -110,18 +110,20 @@ input,textarea{
 }
 
 /*超链接begins*/
-#Home a,#Home a:visited{
+#Home a, #Home a:visited{
 	text-indent: 0;
 	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
 	line-height: 2;
-	/*padding: 2rem 1rem;*/
 }
 
-#Home nav li:focus,#Home nav li:hover{
-	border-radius: 50% 13% 58% 9% / 34% 29% 30% 38%;
-	border-bottom: 1rem solid rgba(245, 216, 214);
+#Home nav li{
+  border-bottom: 0.3rem solid transparent;
+}
+
+#Home nav li:focus, #Home nav li:hover{
+	border-bottom: 0.3rem solid var(--navi-rosy-color);
 }
 #Home nav li:active{
 	background-color: rgba(168, 137, 116,0.2);
@@ -129,52 +131,36 @@ input,textarea{
 
 #Home #resume{
 	position: absolute;
-	left: 45%;
-	top: 37%;
+  top: 35%;
+  left: 43%;
 }
 
 #Home #resume a{
-	font-family: 'Roboto Mono', monospace;
 	font-size: 1.5rem;
 	letter-spacing: .2rem;
 	border: 0.2rem solid rgba(168, 137, 116,0.5);
-	height: 3rem;
 	padding: 1rem 2rem;
-	text-align: center;
-}
 
+}
 /*超链接ends*/
 
 
 /*Home END*/
 
-/*About*/
-/*#About{
-	clear: both;
-}*/
+/* About  */
 
 #About img{
-	margin-top: 5rem;
-	width: 80%;
-	height: 80%;
+  max-width: 150px;
+  max-height: 220px;
+  margin-bottom: 2rem;
 	border-radius: 	164px 164px 150px 150px;
 }
-
-@media screen and (max-width: 768px) {
-  #About img{
-  	width: 100px;
-  	height: 100px;
-  	margin: 1rem 40%;
-  }
+#About p{
+  margin: 7%;
+  font-size: 1.4rem;
 }
 
 
-/*#About p{
-	margin: 0;
-}*/
-#About p:last-of-type{
-	padding-bottom: 2rem;
-}
 /*About END*/
 
 /*Experience*/
@@ -236,7 +222,7 @@ input,textarea{
 .Portfolio .text-clip{
 	text-align: center;
 	margin: 12%;
-	background: url(../images/rain.jpg) no-repeat center;	
+	background: url(../images/rain.jpg) no-repeat center;
 	background-position: center;
 	background-size: 50rem 30rem;
 	-webkit-background-clip: text;
@@ -334,7 +320,7 @@ footer{
 	text-align: left;
 	background-color: #08142b;
 	color: #e3e4e8;
-	height: 7rem;	
+	height: 7rem;
 }
 footer p{
 	padding: 2rem;
